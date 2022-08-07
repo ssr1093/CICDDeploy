@@ -21,6 +21,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-tomcat</artifactId>
+    </dependency>
+		
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -38,17 +44,6 @@
 	<build>
 		<plugins>
 			<plugin>
-				 <plugins>
-  <plugin>
-			<groupId>org.apache.tomcat.maven</groupId>
-			<artifactId>tomcat7-maven-plugin</artifactId>
-			<version>2.2</version>
-	  	<configuration>
-   		<url>http://localhost:8080/manager/CICDproject</url>
-   		<server>TomcatServer</server>
-   		<path>/helloworld-webapp</path>
-		  </configuration>
- 
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>

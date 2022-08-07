@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MainController {
-@GetMapping("/welcome")
+@GetMapping("/welcome/")
 public String index() {
     return "index.html";
   }
